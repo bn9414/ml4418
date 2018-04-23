@@ -21,6 +21,11 @@ homeani();
 
 
 var ser=document.getElementsByClassName('ser-ss');
+var frmimg=document.getElementsByClassName('frm-imgcon');
+var hil=document.getElementsByClassName('hil');
+var wid=document.getElementsByClassName('wid');
+var temp=document.getElementsByClassName('templ');
+var honey=document.getElementsByClassName('hony');
 
 
 window.onscroll = function() {scrollani(),scrollanib()};
@@ -29,17 +34,38 @@ window.onscroll = function() {scrollani(),scrollanib()};
         var w = parseInt(window.innerWidth);
 
 function scrollani() {
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        price[0].className="price pricemob_ani" 
+    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+        for(i=0;i<3;i++){
+        ser[i].style.top="0px";
+        ser[i].style.opacity="1";}
+        
        
       
     }
     
-    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-        price[0].className="price price_ani pricemob_ani" 
+        if (document.body.scrollTop > 900 || document.documentElement.scrollTop > 900) {
+        hil[0].style.top="-20px";
+        hil[0].style.opacity="1";
+        
+         wid[0].style.opacity="1";
+         wid[0].style.top="0px";
+            
+                temp[0].style.opacity="1";
+         temp[0].style.top="0px";
+            
+                honey[0].style.opacity="1";
+         honey[0].style.top="0px";
        
       
     }
+    
+        if (document.body.scrollTop > 1900 || document.documentElement.scrollTop > 1900) {
+            frmimg[0].style.opacity="1";
+       
+            
+        }
+    
+ 
 }
 
 

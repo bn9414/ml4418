@@ -47,14 +47,28 @@ function scrollani() {
 var ecar=document.getElementsByClassName('e-car');
 var pcar=document.getElementsByClassName('p-car');
 
-
+var ser=document.getElementsByClassName('ser-ss');
+var frmimg=document.getElementsByClassName('frm-imgcon');
 window.onscroll = function() {tabsanim()};
 
   var h = parseInt(window.innerHeight);
         var w = parseInt(window.innerWidth);
 
 function tabsanim() {
-    if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+    
+     if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+        for(i=0;i<4;i++){
+        ser[i].style.top="0px";
+        ser[i].style.opacity="1";}
+        
+       
+      
+    }
+    
+    
+    
+    
+    if (document.body.scrollTop > 900 || document.documentElement.scrollTop > 900) {
         ecar[0].style.top="0px";
         ecar[0].style.opacity="1";
         
@@ -63,6 +77,14 @@ function tabsanim() {
        
       
     }
+    
+    
+        if (document.body.scrollTop > 1700 || document.documentElement.scrollTop > 1700) {
+            frmimg[0].style.opacity="1";
+       
+            
+        }
+    
     
     
 }

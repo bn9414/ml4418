@@ -186,7 +186,7 @@ background-position:-00px;}
     opacity: 0;
 }
 
-.galar-con{
+.galar-con{margin-top: 50px;
     padding: 0px 5px;
    
 }
@@ -214,8 +214,8 @@ background-position:-00px;}
     
 }
 .tr-bx{
-    width: 120px;
-     margin: 0 0px;
+    width: 45%;
+     margin: 0px 0px;
     display: flex;
     flex-direction: column;
   position: relative;
@@ -243,6 +243,7 @@ background-position:-00px;}
 .hil{
     background-image: url(images/hillw.svg);
     display: block;
+    position: relative;
     margin-left: auto;
     margin-right: auto;
     padding: 10px;
@@ -250,10 +251,10 @@ background-position:-00px;}
     width: 80px;
     height: 80px;
     background-repeat: no-repeat;
-    background-size: contain;transition: 0.5s;
+    background-size: contain;transition: 0.5s; transition: top 1s, opacity 1s;
 }
 .hil1{ background-image: url(images/hillc.svg);}
-.wid{
+.wid{  position: relative;
     background: url(images/wildw.svg);
     display: block;
     margin-left: auto;
@@ -263,10 +264,10 @@ background-position:-00px;}
     width: 80px;
     height: 80px;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: contain; transition: top 1s, opacity 1s;
 }
 .wid1{background-image: url(images/wildc.svg);}
-.templ{
+.templ{  position: relative;
     background: url(images/templew.svg);
     display: block;
     margin-left: auto;
@@ -276,10 +277,10 @@ background-position:-00px;}
     width: 80px;
     height: 80px;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: contain; transition: top 1s, opacity 1s;
 }
 .templ1{background-image: url(images/templec.svg);}
-.hony{
+.hony{  position: relative;
     background: url(images/honeyw.svg);
     display: block;
     margin-left: auto;
@@ -290,9 +291,17 @@ background-position:-00px;}
     height: 80px;
     background-repeat: no-repeat;
     background-size: contain;
+    transition: top 1s, opacity 1s;top: 100px;
 }
 .hony1{
    background-image: url(images/honeyc.svg); 
+}
+
+@media screen and (min-width:700px){
+    .hil{opacity: 0;top: -70px;}
+      .wid{opacity: 0;top: -70px;}
+      .templ{opacity: 0;top: -70px;}
+      .hony{opacity: 0;top: -70px;}
 }
 @media (min-width:600px){
     
@@ -344,7 +353,7 @@ background-position:-00px;}
     top: 0px;
 }
     .txt-gala p{
-        color: #a2a3a3;
+        color: #454545;
         font-size: 15px;
     }
 }
@@ -450,6 +459,7 @@ background-position:-00px;}
     transition: background 1s;
     box-shadow: 0 2px 8px 4px rgba(0, 0, 0, 0.1);
 }
+
 .ser-sshd{
     font-size: 16px;
     font-weight: 600;
@@ -468,7 +478,10 @@ background-position:-00px;}
     background-repeat: no-repeat;
 background-size: contain;
 }
-
+@media screen and (min-width:700px){
+    .ser-ss{position: relative;top: 100px;opacity: 0;transition:opacity 1s,top 1s,background 0.5s;}
+    
+}
 .ic1{ background-image: url(images/planec.svg);}
 .ic2{ background-image: url(images/hotelc.svg);}
 .ic3{ background-image: url(images/bus.svg);}
@@ -476,6 +489,18 @@ background-size: contain;
 
 .icon-ser img{
     width: 60px;
+}
+.icon-ser:hover{
+   background-image: url(images/trainw.svg); 
+    
+}
+.ic1:hover{
+   background-image: url(images/planew.svg); 
+    
+}
+.ic2:hover{
+   background-image: url(images/hotelw.svg); 
+    
 }
 .ser-pp{
      text-align: center;
@@ -486,16 +511,16 @@ background-size: contain;
     color: #454545;
 }
 .ser-ss:hover.ser-ss *{
-    color: #454545;
+    color: #fcfcfc;
    
 }
 .ser-ss:hover .end-lne{
     border-color:#fcfcfc;
-}/*
+}
 .ser-ss:hover{
     background: #d01818;
 }
-*/
+
 
 
 .ser-contn{
@@ -504,6 +529,7 @@ background-size: contain;
         flex-wrap: wrap;
         align-items: stretch;
          }
+.mnhd h2{text-align: center;padding-top: 20px;}
 @media (min-width:600px){
     .ser-contn{
         display: flex;
@@ -527,13 +553,13 @@ background-size: contain;
         flex-direction: column;
         align-items: stretch;
 }
-    .ser-mnhd{
+    .ser-mnhd,{
     color: #fcfcfc;
     text-align: center;
     padding: 0px 0;
 }
     
-    .ser-mnhd h2{
+    .ser-mnhd h2,.mnhd h2{
         margin-top: 0;
     margin-bottom: 2px;
     font-size: 48px;
@@ -541,6 +567,7 @@ background-size: contain;
     line-height: 1.08;
         color: #454545;
     }
+    .mnhd h2{text-align: center;margin-bottom: 10px;}
     .ser-mnhd p{
         color:#454545;
     }
@@ -979,6 +1006,8 @@ input[type=date]::-webkit-datetime-edit-year-field {
         display: block;
         border-bottom: 3px solid #d01818;
         box-shadow: 15px 20px 50px 0px rgba(20, 20, 20, 0.2);
+        transition: box-shadow 1s,opacity 1s;
+        opacity: 0;
     }
     .frm-imgcon h1{
      color: #fcfcfc;
