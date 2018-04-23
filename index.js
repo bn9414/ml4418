@@ -3,10 +3,11 @@
 
 
 var prev = document.getElementById('prev');
-prev.addEventListener('click',function(e){
+prev.addEventListener('click',function(){
   incre(-1);},false);
+
 var nxt = document.getElementById('nxt');
-nxt.addEventListener('click',function(e){
+nxt.addEventListener('click',function(){
   incre(1);
     clearInterval(xset);
 
@@ -39,7 +40,7 @@ function scrollImg(z){
     caphd[z].style.display="block";                              
 }
 scrollImg(0);
-var xset= setInterval(function(){incre(1);},4000);
+//var xset= setInterval(function(){incre(1);},4000);
 
 
 /*
