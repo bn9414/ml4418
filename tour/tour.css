@@ -155,6 +155,8 @@ background-position:-00px;}
     width: 260px;
     margin: auto;
     border:5px solid #ffffff;
+    order: -1;
+    margin-top: 80px;
 }
 .fligt-con img{
     width: 100%;
@@ -325,7 +327,7 @@ background-position:-00px;}
     
 }
     
-    .fligt-con{
+    .fligt-con{order: 0;
     width: 400px;
     margin: auto;
     border:10px solid #ffffff;
@@ -349,7 +351,8 @@ background-position:-00px;}
 @media (min-width:800px){
     .txt-gala{
         width: 600px;
-        padding: 10px 0px
+        padding: 10px 0px;
+        margin-top: 0px;
     }
     .txt-gala *{
         padding: 3px 0px
