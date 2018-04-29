@@ -119,7 +119,7 @@ body.home  .dmn1 span{width: 60px;}
 
 .main_menu{display: none;}
 #inlogo{position: absolute; left:2%;top: -10px }
-#inlogo_m{border: 1px olid black; width: 55px; height: 55px; margin: auto; display: block; padding-top: 10px; box-sizing: content-box;  }
+#inlogo_m{border: 1px olid black; width: ; height: 55px; margin: auto; display: block; padding-top: 10px; box-sizing: content-box;  }
 
 /* s: menu lines ani */
 #nav_line{transform: rotate(00deg)}
@@ -266,7 +266,7 @@ body.home  .dmn1 span{width: 60px;}
 @media screen and (min-width:930px){
   
     #inlogo{top: -2px }
-#inlogo_m{width: 60px;height: 60px; padding-top: 0px;padding-left: 10px;}
+#inlogo_m{height: 60px; padding-top: 0px;padding-left: 10px;}
     #nav_line{ top:16px}
     .dmenu p{font-size: 16px;font-weight: 600;}
     .dmenu img{top: 18px;left: 85%;}
