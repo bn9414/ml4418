@@ -73,7 +73,7 @@ body.home  .dmn1 span{width: 60px;}
     .lft-prt{
         display: flex;
         flex-direction: row;
-        width: 300px;border: 1px olid black;
+        width: 350px;border: 1px olid black;
        justify-content: space-between;
     }
 }
@@ -336,6 +336,13 @@ body.home  .dmn1 span{width: 60px;}
     .foot1,.foot2,.foot3,.copyright{width: 20%;}
 }
 
+
+.foot2 img{position: relative;animation-name: locani;animation-duration: 1.5s;animation-iteration-count: infinite;top: 10px}
+@keyframes locani{
+    0%{top: 10px}
+    50%{top: 0px}
+    100%{top: 10px}
+}
 
 /*  ----------------- end:footer section------------------*/
     
