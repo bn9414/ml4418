@@ -900,4 +900,11 @@ display: flex;}
 }
 
 
+/*last edit*/
+.ser_txt{width: 95%;margin: auto}
+@media screen and (min-width:600px){
+    .ser_txt{width: 75%;margin: auto}
+}
+
+/*last edit*/
 /*E: side layer of slider*/
