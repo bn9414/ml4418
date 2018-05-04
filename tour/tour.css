@@ -299,7 +299,18 @@ background-position:-00px;}
     .hil{opacity: 0;top: -70px;}
       .wid{opacity: 0;top: -70px;}
       .templ{opacity: 0;top: -70px;}
+    
       .hony{opacity: 0;top: -70px;}
+    .fligt-con{
+        overflow: hidden;
+    }
+    .fligt-con img{position: relative;transition: 1s;animation-timing-function: ease-in-out;
+        animation: flg 3s;
+    }
+    @keyframes flg{
+        0%{width: 120%;opacity:0;left: -70px;}
+        100%{width: 120%;opacity: 1;left: 0px;}
+    }
 }
 @media (min-width:600px){
     
@@ -338,6 +349,7 @@ background-position:-00px;}
     width: 400px;
     margin: auto;
     border:10px solid #ffffff;
+    height: 250px;
 }
 .fligt-con img{
     width: 100%;
@@ -1006,7 +1018,7 @@ input[type=date]::-webkit-datetime-edit-year-field {
         border-bottom: 3px solid #d01818;
         box-shadow: 15px 20px 50px 0px rgba(20, 20, 20, 0.2);
         transition: box-shadow 1s,opacity 1s;
-        opacity: 0;
+        opacity: 1;
         
     }
     .frmimg1{

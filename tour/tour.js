@@ -59,11 +59,11 @@ function scrollani() {
       
     }
     
-        if (document.body.scrollTop > 1900 || document.documentElement.scrollTop > 1900) {
+        /*if (document.body.scrollTop > 1900 || document.documentElement.scrollTop > 1900) {
             frmimg[0].style.opacity="1";
        
             
-        }
+        }*/
     
  
 }
@@ -83,17 +83,20 @@ galaact[0].addEventListener('click',function(){
 galaact[1].addEventListener('click',function(){
     gallery(2);
     incre2(1);
+    scrollImg(0);
     
 },false);
 
 galaact[2].addEventListener('click',function(){
     gallery(3);
     incre3(1);
+    scrollImg3(0);
 },false);
 
 galaact[3].addEventListener('click',function(){
     gallery(4);
     incre4(1);
+    scrollImg4(0);
 },false);
 
 var galaimg = document.getElementsByClassName('gala-imgs');
@@ -273,7 +276,7 @@ function scrollImg1(k){
     ban11[k].style.display="block";
 }
 scrollImg1(0);
-var xset1= setInterval(function(){incre1(1);},4000);
+var xset1= setInterval(function(){incre1(1);},2200);
 
 
 
@@ -290,9 +293,6 @@ var j =0;
 
  function incre2(k){
      j = j + k;
-    if(j == -1){
-         j = ban12.length-1;
-     }
      if(j == ban12.length){
          j=0;
      }
@@ -305,7 +305,7 @@ function scrollImg(z){
     ban12[z].style.display="block";
 }
 
-var xset2= setInterval(function(){incre2(1);},4000);
+var xset2= setInterval(function(){incre2(1);},2200);
 
 
 
@@ -315,9 +315,9 @@ var c =0;
 
  function incre3(d){
      c = c + d;
-    if(c == -1){
+    /*if(c == -1){
          c = ban13.length-1;
-     }
+     }*/
      if(c == ban13.length){
          c=0;
      }
@@ -330,7 +330,7 @@ function scrollImg3(f){
     ban13[f].style.display="block";
 }
 
-var xset3= setInterval(function(){incre3(1);},4000);
+var xset3= setInterval(function(){incre3(1);},2200);
 
 
 
@@ -341,9 +341,9 @@ var o =0;
 
  function incre4(p){
      o = o + p;
-    if(o == -1){
+    /*if(o == -1){
          o = ban14.length-1;
-     }
+     }*/
      if(o == ban14.length){
          o=0;
      }
@@ -356,4 +356,4 @@ function scrollImg4(q){
     ban14[q].style.display="block";
 }
 
-var xset4= setInterval(function(){incre4(1);},4000);
+var xset4= setInterval(function(){incre4(1);},2200);
