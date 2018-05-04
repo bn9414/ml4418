@@ -1,0 +1,6 @@
+User-Agent: *
+
+Sitemap: https://www.melvinlogistics.com/sitemap.xml
+
+User-Agent: *
+Disallow: /miscexpose/

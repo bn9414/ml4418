@@ -1026,15 +1026,15 @@ input[type=date]::-webkit-datetime-edit-year-field {
         transition:  opacity 1s;
     }
     .frmimg2{
-        background-image: url(images/handsk.jpg);
+        background-image: url(images/handsk2.jpg);
         animation: frm1 3s;
     }
     .frmimg3{
-        background-image: url(images/handsk.jpg);
+        background-image: url(images/handsk3.jpg);
        animation: frm2 3s;
     }
     .frmimg4{
-        background-image: url(images/handsk.jpg);
+        background-image: url(images/handsk4.jpg);
          animation: frm3 3s;
     }
     
