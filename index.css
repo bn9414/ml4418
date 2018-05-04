@@ -810,6 +810,7 @@ display: flex;}
     display: block;
     margin-left: 0
 }
+
     .yr-cnt p{
         margin-left: 20px;
     }
@@ -908,3 +909,11 @@ display: flex;}
 
 /*last edit*/
 /*E: side layer of slider*/
+
+@media(max-width:700px){
+.con1-txt,.con2-txt {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+    }
