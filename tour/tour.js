@@ -77,19 +77,25 @@ var w = parseInt(window.innerWidth);
 var galaact = document.getElementsByClassName('tr-bx');
 galaact[0].addEventListener('click',function(){
     gallery(1);
+    incre1(1);
 },false);
 
 galaact[1].addEventListener('click',function(){
     gallery(2);
+    incre2(1);
+    
 },false);
 
 galaact[2].addEventListener('click',function(){
     gallery(3);
+    incre3(1);
 },false);
 
 galaact[3].addEventListener('click',function(){
     gallery(4);
+    incre4(1);
 },false);
+
 var galaimg = document.getElementsByClassName('gala-imgs');
 var hil = document.getElementsByClassName('hil');
 var wid = document.getElementsByClassName('wid');
@@ -97,9 +103,14 @@ var templ = document.getElementsByClassName('templ');
 var hony = document.getElementsByClassName('hony');
 var bbhd = document.getElementsByClassName('bb-hhd');
 var towbx = document.getElementsByClassName('tr-bx1');
+ var frmimgcon = document.getElementsByClassName('frm-imgcon');
 function gallery(g){
 
     if(g == 1){
+        frmimgcon[0].classList.add("frmimg1");
+        frmimgcon[0].classList.remove("frmimg2");
+        frmimgcon[0].classList.remove("frmimg3");
+        frmimgcon[0].classList.remove("frmimg4");
         galaimg[0].style.display="flex";
         
         galaimg[1].style.display="none";
@@ -112,6 +123,7 @@ function gallery(g){
         wid[0].classList.remove('wid1');
         templ[0].classList.remove('templ1');
 
+        
     hil[0].className="hil hil1";    
         bbhd[0].style.color="#d53132";
         galaact[0].style.borderBottom="3px solid #d53132";
@@ -134,6 +146,10 @@ function gallery(g){
         galaact[3].classList.remove("tr-bx1");
     }
     else if(g == 2){
+             frmimgcon[0].classList.add("frmimg2");
+         frmimgcon[0].classList.remove("frmimg1");
+        frmimgcon[0].classList.remove("frmimg3");
+        frmimgcon[0].classList.remove("frmimg4");
         galaimg[0].style.display="none";
         galaimg[1].style.display="flex";
         galaimg[2].style.display="none";
@@ -143,7 +159,7 @@ function gallery(g){
         hony[0].classList.remove('hony1');
       /*  wid[0].style.background="url(images/wildc.svg)";*/
          wid[0].className="wid wid1";
-        
+   
         bbhd[1].style.color="#d53132";
         galaact[1].style.borderBottom="3px solid #d53132";
         galaact[1].classList.add("tr-bx1");
@@ -165,6 +181,10 @@ function gallery(g){
          
     }
     else if(g == 3){
+        frmimgcon[0].classList.add("frmimg3");
+         frmimgcon[0].classList.remove("frmimg2");
+        frmimgcon[0].classList.remove("frmimg1");
+        frmimgcon[0].classList.remove("frmimg4");
         galaimg[0].style.display="none";
         galaimg[1].style.display="none";
         galaimg[2].style.display="flex";
@@ -194,6 +214,11 @@ function gallery(g){
         galaact[3].classList.remove("tr-bx1");
     }
     else if(g == 4){
+       frmimgcon[0].classList.add("frmimg4");
+         frmimgcon[0].classList.remove("frmimg2");
+        frmimgcon[0].classList.remove("frmimg3");
+        frmimgcon[0].classList.remove("frmimg1");
+        
         galaimg[0].style.display="none";
         galaimg[1].style.display="none";
         galaimg[2].style.display="none";
@@ -227,3 +252,108 @@ function gallery(g){
 }
 gallery(1);
 
+var ban11 = document.getElementsByClassName('fligt-con1');
+
+var l =0;
+
+ function incre1(m){
+     l = l + m;
+    if(l == -1){
+         l = ban11.length-1;
+     }
+     if(l == ban11.length){
+         l=0;
+     }
+    scrollImg1(l);
+ }
+function scrollImg1(k){
+    ban11[0].style.display="none";
+    ban11[1].style.display="none";
+    ban11[2].style.display="none";
+    ban11[k].style.display="block";
+}
+scrollImg1(0);
+var xset1= setInterval(function(){incre1(1);},4000);
+
+
+
+
+
+
+
+
+
+
+ var ban12 = document.getElementsByClassName('fligt-con2');
+
+var j =0;
+
+ function incre2(k){
+     j = j + k;
+    if(j == -1){
+         j = ban12.length-1;
+     }
+     if(j == ban12.length){
+         j=0;
+     }
+    scrollImg(j);
+ }
+function scrollImg(z){
+    ban12[0].style.display="none";
+    ban12[1].style.display="none";
+    ban12[2].style.display="none";
+    ban12[z].style.display="block";
+}
+
+var xset2= setInterval(function(){incre2(1);},4000);
+
+
+
+ var ban13 = document.getElementsByClassName('fligt-con3');
+
+var c =0;
+
+ function incre3(d){
+     c = c + d;
+    if(c == -1){
+         c = ban13.length-1;
+     }
+     if(c == ban13.length){
+         c=0;
+     }
+    scrollImg3(c);
+ }
+function scrollImg3(f){
+    ban13[0].style.display="none";
+    ban13[1].style.display="none";
+    ban13[2].style.display="none";
+    ban13[f].style.display="block";
+}
+
+var xset3= setInterval(function(){incre3(1);},4000);
+
+
+
+
+ var ban14 = document.getElementsByClassName('fligt-con4');
+
+var o =0;
+
+ function incre4(p){
+     o = o + p;
+    if(o == -1){
+         o = ban14.length-1;
+     }
+     if(o == ban14.length){
+         o=0;
+     }
+    scrollImg4(o);
+ }
+function scrollImg4(q){
+    ban14[0].style.display="none";
+    ban14[1].style.display="none";
+    ban14[2].style.display="none";
+    ban14[q].style.display="block";
+}
+
+var xset4= setInterval(function(){incre4(1);},4000);
